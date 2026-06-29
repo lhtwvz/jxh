@@ -1,21 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Happy Birthday, Jordan</title>
-<style>
-  :root{--gold:#d7b46a;--gold2:#f1d894;--black:#050505;--ink:#111}
-  *{box-sizing:border-box} body{margin:0;min-height:100svh;background:radial-gradient(circle at 50% 10%,#2b261d 0,#080808 42%,#000 100%);color:#f7f7f7;font-family:Inter,Arial,sans-serif;display:grid;place-items:center;overflow-x:hidden}.confetti span{position:fixed;top:-40px;width:8px;height:18px;background:linear-gradient(var(--gold2),var(--gold));opacity:.75;animation:fall 8s linear infinite;transform:rotate(20deg)}@keyframes fall{to{transform:translateY(110vh) rotate(520deg)}}.wrap{width:min(920px,92vw);text-align:center;padding:44px 0 60px;animation:fade .9s ease both}@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}h1{font-size:clamp(44px,8vw,92px);line-height:.96;margin:0 0 26px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-shadow:0 7px 30px #000}.sub{font-family:"Courier New",monospace;font-size:clamp(17px,2.5vw,27px);color:var(--gold);letter-spacing:.08em;text-transform:lowercase;margin-bottom:44px}.envelope{position:relative;margin:0 auto 54px;width:min(680px,86vw);height:330px;background:linear-gradient(145deg,#292929,#0f0f0f 65%,#050505);border:1px solid #393939;box-shadow:0 40px 70px #000, inset 0 1px 0 #555;border-radius:3px}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(150deg,transparent 49.7%,#2f2f2f 50%,transparent 50.5%),linear-gradient(210deg,transparent 49.7%,#2f2f2f 50%,transparent 50.5%),linear-gradient(to bottom right,transparent 49.5%,#191919 50%,transparent 50.5%);opacity:.9}.seal{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#272727,#030303 70%);box-shadow:0 10px 24px #000, inset 0 0 0 2px #1d1d1d, inset 0 0 0 4px #050505}.seal svg{width:58px;height:58px;stroke:var(--gold);filter:drop-shadow(0 0 8px rgba(215,180,106,.45))}.btn{display:inline-flex;align-items:center;justify-content:center;min-width:min(620px,86vw);padding:24px 34px;border:1px solid var(--gold);border-radius:14px;color:var(--gold2);background:rgba(12,12,12,.62);text-decoration:none;text-transform:uppercase;letter-spacing:.18em;font-weight:800;box-shadow:0 0 22px rgba(215,180,106,.18),inset 0 0 18px rgba(215,180,106,.08);transition:.25s}.btn:hover{transform:translateY(-2px);background:rgba(215,180,106,.12)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Jordan!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-<div class="confetti" aria-hidden="true"><span style="left:8%;animation-delay:0s"></span><span style="left:19%;animation-delay:2s"></span><span style="left:31%;animation-delay:.8s"></span><span style="left:45%;animation-delay:3s"></span><span style="left:59%;animation-delay:1.7s"></span><span style="left:72%;animation-delay:.4s"></span><span style="left:84%;animation-delay:2.5s"></span><span style="left:94%;animation-delay:1.2s"></span></div>
-<main class="wrap">
-  <h1>HAPPY BIRTHDAY, JORDAN!</h1>
-  <div class="sub">— we're going somewhere —</div>
-  <div class="envelope" aria-label="closed envelope invitation"><div class="seal"><svg viewBox="0 0 64 64" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 34h32v16H16z"/><path d="M22 34v-8m10 8v-8m10 8v-8"/><path d="M20 26c0-3 4-3 4 0m6 0c0-3 4-3 4 0m6 0c0-3 4-3 4 0"/><path d="M24 45h16"/><path d="M25 55l14-14m0 14L25 41"/></svg></div></div>
-  <a class="btn" href="ticket.html">open to see where we're going</a>
-</main>
+<body class="home-page">
+  <main class="intro-wrap">
+    <div class="sparkles" aria-hidden="true"></div>
+    <section class="hero-card">
+      <p class="eyebrow">a little surprise</p>
+      <h1>HAPPY BIRTHDAY, JORDAN!</h1>
+      <p class="subtitle">we're going somewhere</p>
+
+      <div class="envelope" aria-label="closed envelope">
+        <div class="flap"></div>
+        <div class="seal"><span>🎂</span><small>×</small></div>
+      </div>
+
+      <a class="button" href="ticket.html">open to see where we're going</a>
+    </section>
+  </main>
 </body>
 </html>

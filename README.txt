@@ -1,12 +1,14 @@
 # Birthday Ticket Reveal
 
-Upload these files to your `jxh` GitHub repository.
+Upload these files to the root of your GitHub repository:
 
-Pages:
-- `index.html` = closed envelope landing page
-- `ticket.html` = full ticket page
+- index.html
+- ticket.html
+- style.css
+- qr-code.png
+- assets/ticket.png
 
-Separate QR code:
-- `qr-code.png` points to https://lhtwvz.github.io/jxh/
+The QR code points to:
+https://lhtwvz.github.io/jxh/
 
-After uploading, wait 1-2 minutes and refresh your GitHub Pages link.
+The first page is the closed envelope. The button opens the ticket page.

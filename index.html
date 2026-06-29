@@ -1,25 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday, Jordan!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Jordan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="home-page">
-  <main class="intro-wrap">
-    <div class="sparkles" aria-hidden="true"></div>
-    <section class="hero-card">
-      <p class="eyebrow">a little surprise</p>
+<body class="home">
+  <main class="stage">
+    <div class="confetti" aria-hidden="true"></div>
+
+    <section class="intro">
+      <p class="eyebrow">special delivery</p>
       <h1>HAPPY BIRTHDAY, JORDAN!</h1>
-      <p class="subtitle">we're going somewhere</p>
+      <p class="subtitle"><span></span> we&rsquo;re going somewhere <span></span></p>
 
-      <div class="envelope" aria-label="closed envelope">
-        <div class="flap"></div>
-        <div class="seal"><span>🎂</span><small>×</small></div>
-      </div>
+      <a class="envelope-link" href="ticket.html" aria-label="Open to see where we're going">
+        <div class="envelope">
+          <div class="flap"></div>
+          <div class="body"></div>
+          <div class="seal">
+            <div class="cake">🎂</div>
+            <div class="x">×</div>
+          </div>
+          <div class="open-button">OPEN HERE</div>
+        </div>
+      </a>
 
-      <a class="button" href="ticket.html">open to see where we're going</a>
+      <p class="hint">tap the envelope</p>
     </section>
   </main>
 </body>

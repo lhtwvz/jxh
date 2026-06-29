@@ -1,37 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Happy Birthday, Jordan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
   <main class="stage">
-    <div class="confetti" aria-hidden="true"></div>
+    <div class="silver-confetti" aria-hidden="true"></div>
 
     <section class="intro">
-      <p class="eyebrow">special delivery</p>
       <h1>HAPPY BIRTHDAY, JORDAN!</h1>
       <p class="subtitle"><span></span> we&rsquo;re going somewhere <span></span></p>
 
-      <a class="envelope-link" href="ticket.html" aria-label="Open to see where we're going">
-        <div class="envelope">
+      <button class="envelope-button" id="openEnvelope" aria-label="Open envelope">
+        <div class="envelope" aria-hidden="true">
+          <div class="ticket-peek"></div>
+          <div class="back"></div>
           <div class="flap"></div>
-          <div class="body"></div>
+          <div class="front-left"></div>
+          <div class="front-right"></div>
           <div class="seal">
             <div class="cake">🎂</div>
             <div class="x">×</div>
           </div>
-          <div class="open-button">OPEN HERE</div>
+          <div class="open-label">OPEN HERE</div>
         </div>
-      </a>
+      </button>
 
-      <p class="hint">tap the envelope</p>
+      <p class="hint">tap the envelope to reveal</p>
     </section>
+
+    <div class="fade-screen" id="fadeScreen"></div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

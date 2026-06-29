@@ -1,37 +1,56 @@
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#050505;color:#f5f5f5}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#030303;color:#f7f7f7}
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
-.stage,.ticket-stage{min-height:100vh;display:grid;place-items:center;padding:48px 18px;position:relative;background:
-radial-gradient(circle at 50% 0%,rgba(255,255,255,.25),transparent 18rem),
-radial-gradient(circle at 50% 85%,rgba(180,180,180,.12),transparent 24rem),
-linear-gradient(180deg,#020202,#0a0a0a 55%,#000)}
-.intro,.ticket-stage{text-align:center;width:min(920px,100%);position:relative;z-index:1;animation:fadeUp .9s ease both}
-.eyebrow{text-transform:uppercase;letter-spacing:.32em;font-size:.78rem;color:#bdbdbd;margin:0 0 8px}
-h1{font-family:"Bebas Neue",Impact,sans-serif;font-size:clamp(3.5rem,10vw,8rem);line-height:.9;margin:0;text-transform:uppercase;letter-spacing:.035em;text-shadow:0 0 30px rgba(255,255,255,.18)}
-.subtitle{display:flex;justify-content:center;align-items:center;gap:18px;color:#dedede;font-size:clamp(.9rem,2vw,1.15rem);letter-spacing:.22em;text-transform:lowercase;margin:28px 0 42px}
-.subtitle span{display:block;width:70px;height:1px;background:linear-gradient(90deg,transparent,#cfcfcf,transparent)}
-.confetti:before,.confetti:after{content:"";position:fixed;inset:-20%;pointer-events:none;background-image:
-radial-gradient(#eee 1px,transparent 2px),radial-gradient(#9e9e9e 1px,transparent 2px),linear-gradient(45deg,transparent 45%,#cfcfcf 45% 55%,transparent 55%);
-background-size:140px 160px,190px 220px,160px 160px;opacity:.22;animation:fall 16s linear infinite}
-.confetti:after{opacity:.14;animation-duration:23s;transform:rotate(8deg)}
-.envelope-link{display:inline-block;text-decoration:none;color:inherit;outline:none}
-.envelope{width:min(700px,88vw);height:390px;position:relative;margin:0 auto 28px;filter:drop-shadow(0 36px 60px rgba(0,0,0,.75));transition:transform .35s ease}
-.envelope-link:hover .envelope{transform:translateY(-8px)}
-.envelope .body{position:absolute;inset:80px 0 0;border:1px solid rgba(255,255,255,.22);border-radius:4px;background:
-linear-gradient(145deg,#232323,#090909 56%,#171717);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -20px 40px rgba(0,0,0,.55)}
-.flap{position:absolute;left:0;right:0;top:80px;height:170px;background:linear-gradient(180deg,#2d2d2d,#111);clip-path:polygon(0 0,100% 0,50% 100%);border-top:1px solid rgba(255,255,255,.3);z-index:2;box-shadow:0 18px 32px rgba(0,0,0,.45)}
-.body:before,.body:after{content:"";position:absolute;bottom:0;width:50%;height:100%;background:linear-gradient(145deg,rgba(255,255,255,.04),transparent 55%);clip-path:polygon(0 0,100% 50%,0 100%)}
-.body:after{right:0;transform:scaleX(-1)}
-.seal{position:absolute;left:50%;top:178px;transform:translateX(-50%);width:116px;height:116px;border-radius:50%;z-index:4;background:radial-gradient(circle at 35% 25%,#393939,#050505 72%);border:1px solid rgba(255,255,255,.32);box-shadow:0 10px 28px rgba(0,0,0,.8), inset 0 0 0 5px rgba(255,255,255,.05);display:grid;place-items:center}
-.cake{font-size:34px;filter:grayscale(1) brightness(1.6)}
-.x{position:absolute;bottom:20px;font-size:28px;color:#d9d9d9;font-weight:200}
-.open-button{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:5;padding:18px 44px;border:1px solid rgba(255,255,255,.65);border-radius:8px;background:rgba(0,0,0,.34);font-family:"Bebas Neue";font-size:1.7rem;letter-spacing:.18em;color:#fff;box-shadow:0 0 18px rgba(255,255,255,.18),inset 0 0 14px rgba(255,255,255,.05)}
+.stage{min-height:100vh;display:grid;place-items:center;padding:44px 18px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 50% 0%,rgba(255,255,255,.24),transparent 18rem),
+radial-gradient(circle at 50% 75%,rgba(190,190,190,.12),transparent 26rem),
+linear-gradient(180deg,#020202,#0a0a0a 58%,#000)}
+.intro{text-align:center;width:min(960px,100%);position:relative;z-index:2;animation:fadeUp .9s ease both}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(4rem,11vw,8.5rem);line-height:.9;margin:0;text-transform:uppercase;letter-spacing:.035em;text-shadow:0 0 32px rgba(255,255,255,.18)}
+.subtitle{display:flex;justify-content:center;align-items:center;gap:18px;color:#e4e4e4;font-size:clamp(.9rem,2vw,1.15rem);letter-spacing:.22em;text-transform:lowercase;margin:28px 0 38px}
+.subtitle span{display:block;width:72px;height:1px;background:linear-gradient(90deg,transparent,#d9d9d9,transparent)}
+.silver-confetti:before,.silver-confetti:after{content:"";position:fixed;inset:-20%;pointer-events:none;background-image:
+radial-gradient(#f3f3f3 1px,transparent 2px),
+radial-gradient(#9a9a9a 1px,transparent 2px),
+linear-gradient(45deg,transparent 43%,#d9d9d9 44% 56%,transparent 57%);
+background-size:140px 160px,190px 220px,160px 160px;opacity:.20;animation:fall 16s linear infinite}
+.silver-confetti:after{opacity:.12;animation-duration:24s;transform:rotate(8deg)}
+.envelope-button{appearance:none;border:0;background:transparent;padding:0;margin:0;cursor:pointer;color:inherit}
+.envelope{width:min(720px,88vw);height:420px;position:relative;margin:0 auto 24px;perspective:1100px;filter:drop-shadow(0 38px 70px rgba(0,0,0,.78));transition:transform .35s ease}
+.envelope-button:hover .envelope{transform:translateY(-8px)}
+.back{position:absolute;left:0;right:0;bottom:0;height:320px;border:1px solid rgba(255,255,255,.22);border-radius:5px;background:linear-gradient(145deg,#242424,#080808 62%,#171717);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -24px 40px rgba(0,0,0,.60)}
+.flap{position:absolute;left:0;right:0;top:100px;height:176px;background:linear-gradient(180deg,#303030,#0e0e0e);clip-path:polygon(0 0,100% 0,50% 100%);border-top:1px solid rgba(255,255,255,.35);z-index:5;transform-origin:top center;transition:transform .8s cubic-bezier(.2,.7,.2,1), filter .8s ease;box-shadow:0 18px 32px rgba(0,0,0,.48)}
+.front-left,.front-right{position:absolute;bottom:0;height:320px;width:50%;z-index:4;background:linear-gradient(145deg,#151515,#050505);border-bottom:1px solid rgba(255,255,255,.18)}
+.front-left{left:0;clip-path:polygon(0 0,100% 50%,0 100%);border-left:1px solid rgba(255,255,255,.16)}
+.front-right{right:0;clip-path:polygon(100% 0,0 50%,100% 100%);border-right:1px solid rgba(255,255,255,.16)}
+.ticket-peek{position:absolute;left:50%;bottom:102px;width:min(460px,66vw);height:130px;transform:translateX(-50%) translateY(60px);z-index:3;border:1px solid rgba(255,255,255,.28);background:
+linear-gradient(180deg,rgba(255,255,255,.10),rgba(0,0,0,.22)), url('assets/ticket.png') center/cover no-repeat;opacity:0;border-radius:4px;transition:transform .9s cubic-bezier(.2,.7,.2,1), opacity .6s ease}
+.seal{position:absolute;left:50%;top:196px;transform:translateX(-50%);width:118px;height:118px;border-radius:50%;z-index:7;background:radial-gradient(circle at 35% 25%,#393939,#050505 72%);border:1px solid rgba(255,255,255,.32);box-shadow:0 10px 28px rgba(0,0,0,.84), inset 0 0 0 5px rgba(255,255,255,.05);display:grid;place-items:center;transition:transform .5s ease, opacity .45s ease}
+.cake{font-size:34px;filter:grayscale(1) brightness(1.65)}
+.x{position:absolute;bottom:20px;font-size:28px;color:#e1e1e1;font-weight:200}
+.open-label{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);z-index:8;padding:18px 46px;border:1px solid rgba(255,255,255,.72);border-radius:8px;background:rgba(0,0,0,.34);font-family:'Bebas Neue';font-size:1.7rem;letter-spacing:.18em;color:#fff;box-shadow:0 0 18px rgba(255,255,255,.18),inset 0 0 14px rgba(255,255,255,.05);transition:opacity .45s ease}
 .hint{letter-spacing:.25em;text-transform:uppercase;font-size:.72rem;color:#999}
-.ticket-page h1{font-size:clamp(4rem,9vw,7rem);margin-top:4px}
-.ticket-page .subtitle{margin-top:8px;margin-bottom:34px;letter-spacing:.12em}
-.ticket-wrap{width:min(1100px,96vw);margin:0 auto 34px;padding:10px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:0 32px 90px rgba(0,0,0,.85);animation:ticketIn 1s .15s ease both}
+.opening .flap{transform:rotateX(178deg);filter:brightness(1.22)}
+.opening .seal{transform:translateX(-50%) scale(.25);opacity:0}
+.opening .ticket-peek{opacity:1;transform:translateX(-50%) translateY(-34px)}
+.opening .open-label{opacity:0}
+.fade-screen{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;z-index:20;transition:opacity .55s ease}
+.fade-screen.active{opacity:1}
+.ticket-only-stage{min-height:100vh;display:grid;place-items:center;padding:24px 12px;background:
+radial-gradient(circle at 50% 8%,rgba(255,255,255,.16),transparent 18rem),
+linear-gradient(180deg,#050505,#000)}
+.ticket-wrap{width:min(1180px,98vw);margin:0 auto;padding:10px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.015));box-shadow:0 32px 90px rgba(0,0,0,.85);animation:ticketIn 1s .1s ease both}
 .ticket-wrap img{display:block;width:100%;height:auto;border-radius:4px}
-.small-button{display:inline-block;text-decoration:none;color:#eee;border:1px solid rgba(255,255,255,.42);padding:13px 28px;border-radius:6px;letter-spacing:.22em;font-size:.72rem;text-transform:uppercase;background:rgba(255,255,255,.03)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 @keyframes ticketIn{from{opacity:0;transform:translateY(34px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes fall{from{background-position:0 -100px,40px -80px,0 -140px}to{background-position:0 900px,40px 820px,0 760px}}
-@media(max-width:650px){.envelope{height:320px}.envelope .body{top:70px}.flap{top:70px;height:135px}.seal{top:145px;width:92px;height:92px}.cake{font-size:27px}.x{font-size:22px;bottom:16px}.open-button{font-size:1.25rem;padding:14px 22px}.subtitle{gap:10px;letter-spacing:.12em}.subtitle span{width:34px}}
+@media(max-width:650px){
+  .envelope{height:330px}
+  .back,.front-left,.front-right{height:250px}
+  .flap{top:80px;height:135px}
+  .seal{top:148px;width:92px;height:92px}
+  .cake{font-size:27px}.x{font-size:22px;bottom:16px}
+  .open-label{font-size:1.22rem;padding:14px 22px;bottom:22px}
+  .subtitle{gap:10px;letter-spacing:.12em}.subtitle span{width:34px}
+  .ticket-only-stage{padding:10px}.ticket-wrap{padding:5px}
+}

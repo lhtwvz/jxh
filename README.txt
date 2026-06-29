@@ -1,14 +1,14 @@
-# Birthday Ticket Reveal
+Birthday Ticket Reveal
 
-Upload these files to the root of your GitHub repository:
+Upload everything in this ZIP to your GitHub repo root.
 
-- index.html
-- ticket.html
-- style.css
-- qr-code.png
-- assets/ticket.png
+Files:
+- index.html = animated envelope opening page
+- ticket.html = clean ticket reveal page
+- style.css = black/white/silver styling
+- script.js = envelope animation
+- assets/ticket.png = approved ticket image
+- qr-code.png = separate QR code for sharing
 
-The QR code points to:
+QR code points to:
 https://lhtwvz.github.io/jxh/
-
-The first page is the closed envelope. The button opens the ticket page.

@@ -1,1 +1,1 @@
-Upload all files and folders to your GitHub repo root.
+Upload all files and the assets folder to your GitHub repo root.

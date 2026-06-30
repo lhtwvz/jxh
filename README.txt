@@ -1,14 +1,15 @@
-Birthday Ticket Reveal
+Final premium birthday ticket reveal.
 
-Upload everything in this ZIP to your GitHub repo root.
-
-Files:
-- index.html = animated envelope opening page
-- ticket.html = clean ticket reveal page
-- style.css = black/white/silver styling
-- script.js = envelope animation
-- assets/ticket.png = approved ticket image
-- qr-code.png = separate QR code for sharing
+Upload all contents of this ZIP to the root of:
+https://github.com/lhtwvz/jxh
 
 QR code points to:
 https://lhtwvz.github.io/jxh/
+
+Files:
+- index.html: envelope cover page with opening animation
+- ticket.html: final ticket only
+- style.css: black / white / silver design
+- script.js: animation + subtle click ambience
+- assets/ticket.png: final high-resolution ticket
+- qr-code.png: separate QR code to send to Jordan

@@ -11,13 +11,12 @@
 </head>
 <body>
   <main class="stage">
-    <div class="silver-confetti" aria-hidden="true"></div>
+    <div class="confetti" aria-hidden="true"></div>
 
     <section class="hero" id="hero">
       <div class="envelope">
-        <div class="env-shadow"></div>
-        <div class="env-back"></div>
-        <div class="env-inside">
+        <div class="back"></div>
+        <div class="inside">
           <div class="silver-glow"></div>
           <span class="spark s1"></span>
           <span class="spark s2"></span>
@@ -25,24 +24,30 @@
           <span class="spark s4"></span>
           <span class="spark s5"></span>
           <span class="spark s6"></span>
+          <span class="spark s7"></span>
+          <span class="spark s8"></span>
         </div>
 
-        <div class="env-flap">
+        <div class="flap">
           <h1 class="shimmer-title">HAPPY<br>BIRTHDAY,<br>JORDAN!</h1>
         </div>
 
-        <div class="env-front-left"></div>
-        <div class="env-front-right"></div>
+        <div class="front-left"></div>
+        <div class="front-right"></div>
 
         <button class="seal-button" id="openSeal" aria-label="Open birthday envelope">
           <span class="seal">
             <svg class="asl-r-icon" viewBox="0 0 120 120" aria-hidden="true">
-              <path d="M44 94c-8-8-12-20-12-34V43c0-5 4-9 9-9s9 4 9 9v26" />
-              <path d="M50 68V27c0-5 4-9 9-9s9 4 9 9v42" />
-              <path d="M68 68V34c0-5 4-9 9-9s9 4 9 9v39c0 17-12 29-29 29h-9" />
-              <path d="M50 31c10 2 22 13 36 0" />
-              <path d="M39 69c8-5 18-4 25 4" />
+              <path d="M44 94c-8-8-12-20-12-34V43c0-5 4-9 9-9s9 4 9 9v26"/>
+              <path d="M50 68V27c0-5 4-9 9-9s9 4 9 9v42"/>
+              <path d="M68 68V34c0-5 4-9 9-9s9 4 9 9v39c0 17-12 29-29 29h-9"/>
+              <path d="M50 31c10 2 22 13 36 0"/>
+              <path d="M39 69c8-5 18-4 25 4"/>
             </svg>
+          </span>
+          <span class="dissolve-particles" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
           </span>
         </button>
       </div>
@@ -50,7 +55,6 @@
 
     <div class="fade-screen" id="fadeScreen"></div>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>

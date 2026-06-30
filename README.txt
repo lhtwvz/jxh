@@ -1,11 +1,8 @@
 Upload all files and folders to your GitHub repository root.
 
-Final V1:
-- full envelope
-- no Open Here button
-- no "tap seal to open"
-- seal is clickable
-- silver shimmer title
-- silver glimmer burst
-- fade to black
-- ticket reveal page
+This version:
+- animates the seal dissolving into silver particles
+- opens the envelope flap
+- releases silver glimmer
+- fades to black
+- reveals the ticket page

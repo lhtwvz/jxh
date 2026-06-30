@@ -1,1 +1,1 @@
-Upload all files and the assets folder to your GitHub repo root. QR code points to https://lhtwvz.github.io/jxh/
+Upload all files and the assets folder to your GitHub repo root. This version adds reveal steps to the front page.

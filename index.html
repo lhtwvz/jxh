@@ -11,41 +11,46 @@
 </head>
 <body>
   <main class="stage">
-    <div class="confetti" aria-hidden="true"></div>
+    <div class="silver-confetti" aria-hidden="true"></div>
 
     <section class="hero" id="hero">
-      <div class="envelope" id="envelope">
-        <div class="back"></div>
-        <div class="inside">
+      <div class="envelope">
+        <div class="env-shadow"></div>
+        <div class="env-back"></div>
+        <div class="env-inside">
+          <div class="silver-glow"></div>
           <span class="spark s1"></span>
           <span class="spark s2"></span>
           <span class="spark s3"></span>
           <span class="spark s4"></span>
+          <span class="spark s5"></span>
+          <span class="spark s6"></span>
         </div>
 
-        <div class="flap">
+        <div class="env-flap">
           <h1 class="shimmer-title">HAPPY<br>BIRTHDAY,<br>JORDAN!</h1>
         </div>
 
-        <div class="front-left"></div>
-        <div class="front-right"></div>
+        <div class="env-front-left"></div>
+        <div class="env-front-right"></div>
 
-        <button class="seal-button" id="openSeal" aria-label="Open envelope">
+        <button class="seal-button" id="openSeal" aria-label="Open birthday envelope">
           <span class="seal">
-            <svg viewBox="0 0 100 100" class="hand-icon" aria-hidden="true">
-              <path d="M35 78c-6-7-8-14-8-26V37c0-4 3-7 7-7s7 3 7 7v18" />
-              <path d="M41 54V24c0-4 3-7 7-7s7 3 7 7v31" />
-              <path d="M55 55V27c0-4 3-7 7-7s7 3 7 7v36c0 14-9 25-23 25h-5" />
-              <path d="M41 28c8 2 18 10 28 0" />
+            <svg class="asl-r-icon" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M44 94c-8-8-12-20-12-34V43c0-5 4-9 9-9s9 4 9 9v26" />
+              <path d="M50 68V27c0-5 4-9 9-9s9 4 9 9v42" />
+              <path d="M68 68V34c0-5 4-9 9-9s9 4 9 9v39c0 17-12 29-29 29h-9" />
+              <path d="M50 31c10 2 22 13 36 0" />
+              <path d="M39 69c8-5 18-4 25 4" />
             </svg>
           </span>
         </button>
       </div>
-      <p class="tap-note">tap the seal to open</p>
     </section>
 
     <div class="fade-screen" id="fadeScreen"></div>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

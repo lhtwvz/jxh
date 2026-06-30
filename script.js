@@ -1,10 +1,10 @@
 const hero = document.getElementById("hero");
-const openSeal = document.getElementById("openSeal");
+const seal = document.getElementById("openSeal");
 const fade = document.getElementById("fadeScreen");
 
-openSeal.addEventListener("click", (event) => {
+seal.addEventListener("click", (event) => {
   event.stopPropagation();
   hero.classList.add("opening");
-  setTimeout(() => fade.classList.add("active"), 1150);
-  setTimeout(() => { window.location.href = "ticket.html"; }, 1850);
+  setTimeout(() => fade.classList.add("active"), 1550);
+  setTimeout(() => { window.location.href = "ticket.html"; }, 2350);
 });

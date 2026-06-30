@@ -1,1 +1,1 @@
-Upload all files and folders to the root of your GitHub repository. Click the seal area to trigger the reveal, fade to black, then ticket page.
+Upload all files and folders to your GitHub repo root.

@@ -1,8 +1,1 @@
-Upload all files and folders to your GitHub repository root.
-
-This version:
-- animates the seal dissolving into silver particles
-- opens the envelope flap
-- releases silver glimmer
-- fades to black
-- reveals the ticket page
+Upload all files and folders to the root of your GitHub repository. Click the seal area to trigger the reveal, fade to black, then ticket page.

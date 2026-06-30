@@ -2,12 +2,10 @@
 html,body{margin:0;min-height:100%;background:#000;color:#fff}
 body{font-family:Arial,sans-serif;overflow-x:hidden}
 .cover-page{min-height:100vh;background:#000}
-.cover-wrap{min-height:100vh;display:grid;place-items:center;padding:18px 12px 36px}
-.cover-button{border:0;background:#000;padding:0;margin:0;cursor:pointer;width:100%;display:grid;place-items:center}
-.cover-button img{display:block;width:min(100vw,900px);height:auto;max-height:82vh;object-fit:contain;filter:drop-shadow(0 35px 70px rgba(0,0,0,.85));animation:coverIn .9s ease both}
-.cover-button.opening img{animation:openPulse 1.15s ease forwards}
-.reveal-steps{width:min(780px,92vw);margin:10px auto 0;padding:18px 20px;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:rgba(255,255,255,.035);box-shadow:0 18px 60px rgba(0,0,0,.55);text-align:left;animation:coverIn 1s .25s ease both}
-.reveal-steps p{margin:8px 0;color:#e8e8e8;font-size:clamp(14px,2.2vw,18px);letter-spacing:.06em;line-height:1.35}
+.cover-wrap{min-height:100vh;display:grid;place-items:center;padding:0}
+.cover-button{border:0;background:#000;padding:0;margin:0;cursor:pointer;width:100%;min-height:100vh;display:grid;place-items:center;overflow:hidden}
+.cover-button img{display:block;width:min(100vw,900px);height:auto;max-height:100vh;object-fit:contain;filter:drop-shadow(0 35px 70px rgba(0,0,0,.85));animation:coverIn .9s ease both;transform-origin:center 58%}
+.cover-button.opening img{animation:envelopeOpen 1.15s ease forwards}
 .fade-screen{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;z-index:20;transition:opacity .55s ease}
 .fade-screen.active{opacity:1}
 .ticket-page{background:#000}
@@ -16,7 +14,11 @@ body{font-family:Arial,sans-serif;overflow-x:hidden}
 .ticket-shimmer:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 0%,transparent 38%,rgba(255,255,255,.18) 48%,transparent 58%,transparent 100%);transform:translateX(-130%);animation:shimmer 1.6s .55s ease-out 1;pointer-events:none}
 .ticket-image-only{display:block;width:100%;height:auto;max-height:100vh;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.85))}
 @keyframes coverIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes openPulse{0%{transform:scale(1);opacity:1}45%{transform:scale(1.025);opacity:1}100%{transform:scale(.98);opacity:.05}}
+@keyframes envelopeOpen{
+  0%{transform:scale(1) rotateX(0deg);opacity:1;filter:drop-shadow(0 35px 70px rgba(0,0,0,.85))}
+  35%{transform:scale(1.025) rotateX(0deg);opacity:1;filter:drop-shadow(0 45px 82px rgba(255,255,255,.12))}
+  70%{transform:scale(1.02) translateY(-10px);opacity:.88}
+  100%{transform:scale(.98) translateY(18px);opacity:.02}
+}
 @keyframes ticketIn{from{opacity:0;transform:translateY(18px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes shimmer{to{transform:translateX(130%)}}
-@media(max-width:700px){.cover-button img{max-height:78vh}.reveal-steps{margin-top:6px;padding:14px 16px}.reveal-steps p{margin:7px 0}}

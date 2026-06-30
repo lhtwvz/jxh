@@ -1,19 +1,40 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Happy Birthday Jordan</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Jordan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="cover-page">
-  <main class="cover-wrap">
-    <button class="cover-button" id="openEnvelope" aria-label="Open here">
-      <img src="assets/cover.png" alt="Happy Birthday Jordan envelope invitation">
-    </button>
-  </main>
-
+<body>
+<main class="stage">
+  <div class="confetti"></div>
+  <section class="hero" id="hero">
+    <div class="envelope">
+      <div class="back"></div>
+      <div class="inside">
+        <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span>
+      </div>
+      <div class="flap">
+        <h1 class="shimmer-title">HAPPY<br>BIRTHDAY,<br>JORDAN!</h1>
+      </div>
+      <div class="front-left"></div>
+      <div class="front-right"></div>
+      <div class="seal">
+        <svg viewBox="0 0 100 100" class="hand-icon" aria-label="ASL letter R style hand icon">
+          <path d="M36 78c-6-7-8-14-8-25V35c0-4 3-7 7-7s7 3 7 7v18" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M42 52V24c0-4 3-7 7-7s7 3 7 7v29" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M56 53V29c0-4 3-7 7-7s7 3 7 7v35c0 14-9 24-22 24h-5" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M42 29c8 2 17 10 28 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <button class="open-button" id="openButton">OPEN HERE</button>
+    </div>
+  </section>
   <div class="fade-screen" id="fadeScreen"></div>
-  <script src="script.js"></script>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

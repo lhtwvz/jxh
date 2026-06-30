@@ -1,8 +1,9 @@
-const button=document.getElementById('openEnvelope');
-const fade=document.getElementById('fadeScreen');
-
-button.addEventListener('click',()=>{
-  button.classList.add('opening');
-  setTimeout(()=>fade.classList.add('active'),750);
-  setTimeout(()=>{window.location.href='ticket.html'},1250);
+const hero=document.getElementById("hero");
+const openButton=document.getElementById("openButton");
+const fade=document.getElementById("fadeScreen");
+openButton.addEventListener("click",(event)=>{
+  event.stopPropagation();
+  hero.classList.add("opening");
+  setTimeout(()=>fade.classList.add("active"),1150);
+  setTimeout(()=>{window.location.href="ticket.html";},1850);
 });
